@@ -55,8 +55,9 @@ set "JAVACMD=%JAVA_HOME%\bin\java.exe"
 if exist "%JAVACMD%" goto chkMHome
 
 echo The JAVA_HOME environment variable is not defined correctly >&2
-echo This environment variable is needed to run this program >&2
-echo NB: JAVA_HOME should point to a JDK not a JRE >&2
+echo JAVA_HOME: "%JAVA_HOME%"
+echo This environment variable or java.exe available on the PATH is needed to run this program >&2
+echo JAVACMD: "%JAVACMD%" >&2
 goto error
 
 :chkMHome
